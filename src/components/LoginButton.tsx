@@ -21,8 +21,11 @@ export default class PortalExampleControlled extends Component {
 
   // validation checking
   handleLogin = (e: any) => {
-    console.log("Email: " + this.state.email);
-    console.log("Password: " + this.state.password);
+    if (this.state.email === this.state.InputEmail && this.state.password === this.state.InputPassword){ 
+    }
+    // outputs in the consoles
+    // console.log("Email: " + this.state.email);
+    // console.log("Password: " + this.state.password);
 }
 
   render() {
