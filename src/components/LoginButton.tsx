@@ -4,23 +4,30 @@ import { Button, Grid, Header, Segment, Portal } from "semantic-ui-react";
 export default class PortalExampleControlled extends Component {
   state = { open: false,
   email: "info",
-  password: "password" };
+  password: "password",
+  InputEmail: " ",
+  InputPassword: " "};
 
   handleClose = () => this.setState({ open: false });
   handleOpen = () => this.setState({ open: true });
 
   handleEmailChange = (e: any) => {
-    this.setState({ email: e.target.value });
+    this.setState({ InputEmail: e.target.value });
   };
 
   handlePasswordChange = (e: any) => {
-    this.setState({ password: e.target.value });
+    this.setState({ InputPassword: e.target.value });
   };
 
+  
+
+  // validation checking
   handleLogin = (e: any) => {
     console.log("Email: " + this.state.email);
     console.log("Password: " + this.state.password);
 }
+
+
 
   render() {
     const { open } = this.state;
