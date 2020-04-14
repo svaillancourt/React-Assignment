@@ -1,0 +1,14 @@
+.profile{
+    
+    background-color: rgb(64, 77, 160);
+    color: seashell;
+    font-size: medium;
+
+    text-align: right;       
+    justify-content: center;
+}
+
+.bg1{
+    background-color: rgb(8, 12, 37);
+    align-Items: "center";
+}

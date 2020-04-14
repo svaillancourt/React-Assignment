@@ -1,0 +1,84 @@
+April 9 Updates and Reminders
+Inbox
+x
+
+- techc (sent by bcen@ualberta.ca)
+Thu, Apr 9, 4:08 PM (3 days ago)
+to Warren, Bo, Cole, Kevin, Clayton, Aaron
+
+Hello Techcareers students!
+
+The following is your email blast for Thursday, April 9:
+
+React Assignment and Helpful Materials: 
+
+Assignment: React Login
+
+Create a webpage using react and typescript where:
+1: You will have a page with a username and password input field along with a submit button. This button will by default show "login" if the user has not logged in yet. If the user is logged in then it will show "log out".
+2: If this username/password combo is incorrect, you will show a warning to them letting
+them know it was incorrect
+3: If the username/password combo is correct then you will display the user's information
+on the screen.
+4: If the log out button is pressed then the user will be "logged out" of the system.
+
+MINIMUM EXPECTATIONS:
+
+-At minimum 4 unique react components you built.
+
+-The user must have at MINIMUM 4 properties to display on their profile.
+Eg: Username, likesPineapplesOnPizza, etc.
+
+-State MUST be used. State MUST be changed when the user is logged in.
+USE STATE.
+
+-Props MUST be used and passed down from at least one parent component to one child
+component. Very likely you will pass down props more than that, however.
+
+-Conditional rendering MUST be used.
+
+-Default state that holds usernames/user passwords that the login component's provided
+username/password will check against.
+
+-If the username/password is correct then the profile will show data from the default
+component state.
+
+If you want a challenge, consider adding the following:
+
+-A nav bar above your page
+
+-A log in modal
+https://www.npmjs.com/package/react-modal-login
+
+Note: Your assignment must use states to alter the login text. You cannot simply refresh the page to change display elements!
+
+-----------
+Some hints for assignment:
+
+-Do not get hung up on html/css. I introduced you to semantic ui react (not normal semantic ui, specifically semantic ui REACT) for a reason.
+
+-Check over the github examples you have. I have gone over state, conditional rendering, importing npm libraries etc.
+There are no brand new concepts for this assignment, just application of what you already learned.
+
+Some suggested readings:
+
+-https://react.semantic-ui.com/collections/menu/#types-props
+
+Think "hmm what would I normally want a button to do?"
+
+-https://reactjs.org/docs/state-and-lifecycle.html
+
+-https://reactjs.org/docs/conditional-rendering.html
+
+Command to start a new react project: npx create-react-app client-app --use-npm --typescript
+
+Command to install semantic ui react: npm install semantic-ui-react (You must freshly install it if you wish to use it on every new project)
+
+
+If you feel comfortable with the current React material, you are encouraged to look ahead at the next topic of lifecycle methods:
+
+https://learning.oreilly.com/videos/react-the/9781789132229 
+
+The link above has a section on lifecycle methods. Code examples are shown with JSX rather than TSX (we are using TSX), but the theory is the same.
+
+Remember Friday, April 9 and Saturday, April 13 are stat holidays. There are no classes on these days. Your React assignment is due before class on April 14 and is expected to be submitted to techc@ualberta.ca. Enjoy your long weekend!
