@@ -19,15 +19,11 @@ export default class PortalExampleControlled extends Component {
     this.setState({ InputPassword: e.target.value });
   };
 
-  
-
   // validation checking
   handleLogin = (e: any) => {
     console.log("Email: " + this.state.email);
     console.log("Password: " + this.state.password);
 }
-
-
 
   render() {
     const { open } = this.state;
@@ -36,8 +32,8 @@ export default class PortalExampleControlled extends Component {
       <Grid columns={2}>
         <Grid.Column>
         <form>
-        <input type="text" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
-        <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+        <input type="text" name="email" placeholder="Email" value={this.state.InputEmail} onChange={this.handleEmailChange} />
+        <input type="password" name="password" placeholder="Password" value={this.state.InputPassword} onChange={this.handlePasswordChange}/>
         <button type="button" onClick={this.handleLogin}>Login</button>
       </form>
           {/* <form>
