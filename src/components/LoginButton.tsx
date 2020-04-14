@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Button, Grid, Header, Segment, Portal } from "semantic-ui-react";
 
 export default class PortalExampleControlled extends Component {
-  state = { open: false };
+  state = { open: false,
+  email: "info",
+  password: "password" };
 
   handleClose = () => this.setState({ open: false });
   handleOpen = () => this.setState({ open: true });
@@ -10,10 +12,15 @@ export default class PortalExampleControlled extends Component {
   handleEmailChange = (e: any) => {
     this.setState({ email: e.target.value });
   };
-  
+
   handlePasswordChange = (e: any) => {
     this.setState({ password: e.target.value });
   };
+
+  handleLogin = () => {
+    console.log("Email: " + this.state.email);
+    console.log("Password: " + this.state.password);
+}
 
   render() {
     const { open } = this.state;
@@ -21,7 +28,12 @@ export default class PortalExampleControlled extends Component {
     return (
       <Grid columns={2}>
         <Grid.Column>
-          <form>
+        <form>
+        <input type="text" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
+        <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+        <button type="button" onClick={this.handleLogin}>Login</button>
+      </form>
+          {/* <form>
             <h3>Email </h3>
             <input type="email" name="" id="" />
             <h3>Password </h3>
@@ -32,7 +44,7 @@ export default class PortalExampleControlled extends Component {
             disabled={open}
             primary
             onClick={this.handleOpen}
-          />
+          /> */}
 
           <Portal onClose={this.handleClose} open={open}>
             <Segment
