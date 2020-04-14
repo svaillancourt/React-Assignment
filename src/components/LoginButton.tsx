@@ -17,7 +17,7 @@ export default class PortalExampleControlled extends Component {
     this.setState({ password: e.target.value });
   };
 
-  handleLogin = () => {
+  handleLogin = (e: any) => {
     console.log("Email: " + this.state.email);
     console.log("Password: " + this.state.password);
 }
